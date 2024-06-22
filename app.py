@@ -65,7 +65,7 @@ if uploaded_file is not None:
     # 최근 1주일 대화 내용 추출
     recent_chat = recent_df['Message'].str.cat(sep='\n')
 
-    print("Recent Chat:\n", recent_chat)
+    # print("Recent Chat:\n", recent_chat)
 
     conversation = "\n".join([f"{row['Date'].strftime('%Y-%m-%d')} {row['User']}: {row['Message']}" for _, row in recent_df.iterrows()])
     system_propmpt="You are an expert in summarizing conversations.\n"
@@ -93,8 +93,8 @@ if uploaded_file is not None:
 
 
 
-    print(system_propmpt)
-    print(conversation)
+    # print(system_propmpt)
+    # print(conversation)
     
     
     
