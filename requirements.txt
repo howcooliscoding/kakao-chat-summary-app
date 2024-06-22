@@ -3,3 +3,4 @@ openai==1.1.1
 altair
 pandas
 anthropic==0.28.0
+python-dotenv
